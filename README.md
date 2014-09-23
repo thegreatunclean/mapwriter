@@ -8,7 +8,7 @@ Modified to more faithfully recreate the Anvil region format.  Add a dummy level
 You **must** use a very recent version of MCEdit, one that supports mod blocks.
 
 
-Instructions for development:
+Instructions for building/development:
 
 1) Run "gradlew setupDecompWorkspace" in the mapwriter folder.
 
