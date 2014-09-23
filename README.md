@@ -41,5 +41,5 @@ Acknowledgements:
 
 Licensing:  
 MapWriter is without a license file, but in [this post](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286882-mapwriter-an-open-source-mini-map?comment=326) the author states it is under CC0.  
-It is assumed that all previous contributors agreed to license under those terms.  
+It is assumed that all previous contributors agreed to license under those terms. If this is not the case please contact me with info.  
 All modifications made by myself (thegreatunclean) are licensed under CC0.  
