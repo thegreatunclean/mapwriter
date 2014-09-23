@@ -175,19 +175,42 @@ public class MwChunk implements IChunk {
 			if ((this.lsbArray != null) && (this.lsbArray[y] != null)) {
 				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Blocks", this.lsbArray[y]));
 			}
+			else {
+				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Blocks", new byte[4096]));
+			}
 			if ((this.msbArray != null) && (this.msbArray[y] != null)) {
 				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Add", this.msbArray[y]));
+			}
+			else {
+				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Add", new byte[2048]));
 			}
 			if ((this.metaArray != null) && (this.metaArray[y] != null)) {
 				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Data", this.metaArray[y]));
 			}
+			else {
+				section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "Data", new byte[2048]));
+			}
 			
+			section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "SkyLight", new byte[2048]));
+			section.addChild(new Nbt(Nbt.TAG_BYTE_ARRAY, "BlockLight", new byte[2048]));
 			sections.addChild(section);
 		}
 		
 		Nbt level = new Nbt(Nbt.TAG_COMPOUND, "Level", null);
 		level.addChild(new Nbt(Nbt.TAG_INT, "xPos", this.x));
 		level.addChild(new Nbt(Nbt.TAG_INT, "zPos", this.z));
+		
+		level.addChild(new Nbt(Nbt.TAG_LIST, "TileEntities", null));
+		level.addChild(new Nbt(Nbt.TAG_LIST, "Entities", null));
+
+		//TerrainPopulated
+		level.addChild(new Nbt(Nbt.TAG_INT, "TerrainPopulated", 1));
+
+		level.addChild(new Nbt(Nbt.TAG_INT, "LightPopulated", 0));
+
+		level.addChild(new Nbt(Nbt.TAG_LONG, "InhabitedTime", 0L));
+
+		level.addChild(new Nbt(Nbt.TAG_INT_ARRAY, "HeightMap", new int[256]));
 		level.addChild(sections);
 		
 		if (this.biomeArray != null) {
