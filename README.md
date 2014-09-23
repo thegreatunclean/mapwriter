@@ -3,7 +3,8 @@ mapwriter
 
 MapWriter: A minimap mod for Minecraft
 
-Modified to more faithfully recreate the Anvil region format.  Add a dummy level.dat and you can open these region files with tools like MCEdit.
+Modified to more faithfully recreate the Anvil region format.  Add a dummy level.dat and you can open these region files with tools like MCEdit.  
+Such a dummy level.dat is thoughtfully provided for you.  Place it in the world folder alongside the `region` folder and away you go!  You will most likely have to switch into Chunk View in MCEdit and pan around to find your map data.
 
 You **must** use a very recent version of MCEdit, one that supports mod blocks.
 
