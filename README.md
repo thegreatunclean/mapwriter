@@ -36,3 +36,10 @@ Acknowledgements:
 * taelnia for extrautils compatibility patch.
 * LoneStar144 for minimap border and arrow textures.
 * jk-5 for updating the mod to be compatible with Minecraft 1.7.
+
+****
+
+Licensing:  
+MapWriter is without a license file, but in [this post](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286882-mapwriter-an-open-source-mini-map?comment=326) the author states it is under CC0.  
+It is assumed that all previous contributors agreed to license under those terms.  
+All modifications made by myself (thegreatunclean) are licensed under CC0.  
